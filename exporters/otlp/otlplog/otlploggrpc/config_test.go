@@ -16,8 +16,8 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc/internal/retry"
+	"github.com/hanzoai/telemetry-go"
+	"github.com/hanzoai/telemetry-go/exporters/otlp/otlplog/otlploggrpc/internal/retry"
 )
 
 const (

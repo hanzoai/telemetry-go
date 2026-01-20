@@ -1,14 +1,14 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package trace // import "go.opentelemetry.io/otel/trace"
+package trace // import "github.com/hanzoai/telemetry-go/trace"
 
 import (
 	"context"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/codes"
-	"go.opentelemetry.io/otel/trace/embedded"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/codes"
+	"github.com/hanzoai/telemetry-go/trace/embedded"
 )
 
 // Span is the individual component of a trace. It represents a single named

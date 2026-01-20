@@ -1,17 +1,17 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package trace // import "go.opentelemetry.io/otel/sdk/trace"
+package trace // import "github.com/hanzoai/telemetry-go/sdk/trace"
 
 import (
 	"context"
 	"sync"
 	"sync/atomic"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/sdk/trace/internal/observ"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/hanzoai/telemetry-go"
+	"github.com/hanzoai/telemetry-go/internal/global"
+	"github.com/hanzoai/telemetry-go/sdk/trace/internal/observ"
+	"github.com/hanzoai/telemetry-go/trace"
 )
 
 // simpleSpanProcessor is a SpanProcessor that synchronously sends all

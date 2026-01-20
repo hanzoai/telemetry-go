@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package observ // import "go.opentelemetry.io/otel/sdk/log/internal/observ"
+package observ // import "github.com/hanzoai/telemetry-go/sdk/log/internal/observ"
 
 import (
 	"context"
@@ -9,18 +9,18 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/metric"
-	"go.opentelemetry.io/otel/sdk"
-	"go.opentelemetry.io/otel/sdk/log/internal/x"
-	semconv "go.opentelemetry.io/otel/semconv/v1.37.0"
-	"go.opentelemetry.io/otel/semconv/v1.37.0/otelconv"
+	"github.com/hanzoai/telemetry-go"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/metric"
+	"github.com/hanzoai/telemetry-go/sdk"
+	"github.com/hanzoai/telemetry-go/sdk/log/internal/x"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
+	"github.com/hanzoai/telemetry-go/semconv/v1.37.0/otelconv"
 )
 
 const (
 	// ScopeName is the name of the instrumentation scope.
-	ScopeName = "go.opentelemetry.io/otel/sdk/log/internal/observ"
+	ScopeName = "github.com/hanzoai/telemetry-go/sdk/log/internal/observ"
 )
 
 var measureAttrsPool = sync.Pool{

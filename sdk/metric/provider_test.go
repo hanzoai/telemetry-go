@@ -14,11 +14,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	api "go.opentelemetry.io/otel/metric"
-	"go.opentelemetry.io/otel/metric/noop"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
+	"github.com/hanzoai/telemetry-go"
+	"github.com/hanzoai/telemetry-go/attribute"
+	api "github.com/hanzoai/telemetry-go/metric"
+	"github.com/hanzoai/telemetry-go/metric/noop"
+	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata"
 )
 
 func TestMeterConcurrentSafe(*testing.T) {

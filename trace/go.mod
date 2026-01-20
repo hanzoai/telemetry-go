@@ -1,13 +1,13 @@
-module go.opentelemetry.io/otel/trace
+module github.com/hanzoai/telemetry-go/trace
 
 go 1.24.0
 
-replace go.opentelemetry.io/otel => ../
+replace github.com/hanzoai/telemetry-go => ../
 
 require (
 	github.com/google/go-cmp v0.7.0
+	github.com/hanzoai/telemetry-go v1.39.0
 	github.com/stretchr/testify v1.11.1
-	go.opentelemetry.io/otel v1.39.0
 )
 
 require (
@@ -17,4 +17,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace go.opentelemetry.io/otel/metric => ../metric
+replace github.com/hanzoai/telemetry-go/metric => ../metric

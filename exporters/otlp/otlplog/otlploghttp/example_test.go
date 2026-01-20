@@ -6,9 +6,9 @@ package otlploghttp_test
 import (
 	"context"
 
-	"go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploghttp"
-	"go.opentelemetry.io/otel/log/global"
-	"go.opentelemetry.io/otel/sdk/log"
+	"github.com/hanzoai/telemetry-go/exporters/otlp/otlplog/otlploghttp"
+	"github.com/hanzoai/telemetry-go/log/global"
+	"github.com/hanzoai/telemetry-go/sdk/log"
 )
 
 func Example() {

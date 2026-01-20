@@ -3,7 +3,7 @@
 
 // Package observ provides experimental observability instrumentation
 // for the prometheus exporter.
-package observ // import "go.opentelemetry.io/otel/exporters/prometheus/internal/observ"
+package observ // import "github.com/hanzoai/telemetry-go/exporters/prometheus/internal/observ"
 
 import (
 	"context"
@@ -12,22 +12,22 @@ import (
 	"sync"
 	"time"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/exporters/prometheus/internal"
-	"go.opentelemetry.io/otel/exporters/prometheus/internal/x"
-	"go.opentelemetry.io/otel/metric"
-	semconv "go.opentelemetry.io/otel/semconv/v1.37.0"
-	"go.opentelemetry.io/otel/semconv/v1.37.0/otelconv"
+	"github.com/hanzoai/telemetry-go"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/exporters/prometheus/internal"
+	"github.com/hanzoai/telemetry-go/exporters/prometheus/internal/x"
+	"github.com/hanzoai/telemetry-go/metric"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
+	"github.com/hanzoai/telemetry-go/semconv/v1.37.0/otelconv"
 )
 
 const (
 	// ComponentType uniquely identifies the OpenTelemetry Exporter component
 	// being instrumented.
-	ComponentType = "go.opentelemetry.io/otel/exporters/prometheus/prometheus.Exporter"
+	ComponentType = "github.com/hanzoai/telemetry-go/exporters/prometheus/prometheus.Exporter"
 
 	// ScopeName is the unique name of the meter used for instrumentation.
-	ScopeName = "go.opentelemetry.io/otel/exporters/prometheus/internal/observ"
+	ScopeName = "github.com/hanzoai/telemetry-go/exporters/prometheus/internal/observ"
 
 	// SchemaURL is the schema URL of the metrics produced by this
 	// instrumentation.

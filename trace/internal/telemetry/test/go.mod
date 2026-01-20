@@ -1,11 +1,11 @@
-module go.opentelemetry.io/otel/trace/internal/telemetry/test
+module github.com/hanzoai/telemetry-go/trace/internal/telemetry/test
 
 go 1.24.0
 
 require (
 	github.com/stretchr/testify v1.11.1
 	go.opentelemetry.io/collector/pdata v1.49.0
-	go.opentelemetry.io/otel/trace v1.39.0
+	github.com/hanzoai/telemetry-go/trace v1.39.0
 )
 
 require (
@@ -22,8 +22,8 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace go.opentelemetry.io/otel/trace => ../../..
+replace github.com/hanzoai/telemetry-go/trace => ../../..
 
-replace go.opentelemetry.io/otel => ../../../..
+replace github.com/hanzoai/telemetry-go => ../../../..
 
-replace go.opentelemetry.io/otel/metric => ../../../../metric
+replace github.com/hanzoai/telemetry-go/metric => ../../../../metric

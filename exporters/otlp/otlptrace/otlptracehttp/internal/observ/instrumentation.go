@@ -3,7 +3,7 @@
 
 // Package observ provides experimental observability instrumentation for the
 // otlptracehttp exporter.
-package observ // import "go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp/internal/observ"
+package observ // import "github.com/hanzoai/telemetry-go/exporters/otlp/otlptrace/otlptracehttp/internal/observ"
 
 import (
 	"context"
@@ -17,19 +17,19 @@ import (
 	"sync"
 	"time"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp/internal"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp/internal/x"
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/metric"
-	semconv "go.opentelemetry.io/otel/semconv/v1.37.0"
-	"go.opentelemetry.io/otel/semconv/v1.37.0/otelconv"
+	"github.com/hanzoai/telemetry-go"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/exporters/otlp/otlptrace/otlptracehttp/internal"
+	"github.com/hanzoai/telemetry-go/exporters/otlp/otlptrace/otlptracehttp/internal/x"
+	"github.com/hanzoai/telemetry-go/internal/global"
+	"github.com/hanzoai/telemetry-go/metric"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
+	"github.com/hanzoai/telemetry-go/semconv/v1.37.0/otelconv"
 )
 
 const (
 	// ScopeName is the unique name of the meter used for instrumentation.
-	ScopeName = "go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp/internal/observ"
+	ScopeName = "github.com/hanzoai/telemetry-go/exporters/otlp/otlptrace/otlptracehttp/internal/observ"
 
 	// SchemaURL is the schema URL of the metrics produced by this
 	// instrumentation.

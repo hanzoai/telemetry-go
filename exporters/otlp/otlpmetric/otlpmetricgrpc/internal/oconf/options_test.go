@@ -15,9 +15,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetricgrpc/internal/envconfig"
-	"go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
+	"github.com/hanzoai/telemetry-go/exporters/otlp/otlpmetric/otlpmetricgrpc/internal/envconfig"
+	"github.com/hanzoai/telemetry-go/sdk/metric"
+	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata"
 )
 
 const (

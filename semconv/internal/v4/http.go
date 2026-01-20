@@ -2,15 +2,15 @@
 // SPDX-License-Identifier: Apache-2.0
 
 // Package internal provides common semconv functionality.
-package internal // import "go.opentelemetry.io/otel/semconv/internal/v4"
+package internal // import "github.com/hanzoai/telemetry-go/semconv/internal/v4"
 
 import (
 	"fmt"
 	"net/http"
 	"strings"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/codes"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/codes"
 )
 
 // HTTPConv are the HTTP semantic convention attributes defined for a version

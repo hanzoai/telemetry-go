@@ -18,15 +18,15 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/metric"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/metric/exemplar"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata/metricdatatest"
-	"go.opentelemetry.io/otel/sdk/resource"
+	"github.com/hanzoai/telemetry-go"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/internal/global"
+	"github.com/hanzoai/telemetry-go/metric"
+	"github.com/hanzoai/telemetry-go/sdk/instrumentation"
+	"github.com/hanzoai/telemetry-go/sdk/metric/exemplar"
+	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata"
+	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata/metricdatatest"
+	"github.com/hanzoai/telemetry-go/sdk/resource"
 )
 
 // A meter should be able to make instruments concurrently.
@@ -2544,7 +2544,7 @@ func TestDuplicateInstrumentCreation(t *testing.T) {
 }
 
 func TestMeterProviderDelegation(t *testing.T) {
-	meter := otel.Meter("go.opentelemetry.io/otel/metric/internal/global/meter_test")
+	meter := otel.Meter("github.com/hanzoai/telemetry-go/metric/internal/global/meter_test")
 	otel.SetErrorHandler(otel.ErrorHandlerFunc(func(err error) { require.NoError(t, err) }))
 	for range 5 {
 		int64Counter, err := meter.Int64ObservableCounter("observable.int64.counter")

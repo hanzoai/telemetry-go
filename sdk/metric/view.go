@@ -1,14 +1,14 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package metric // import "go.opentelemetry.io/otel/sdk/metric"
+package metric // import "github.com/hanzoai/telemetry-go/sdk/metric"
 
 import (
 	"errors"
 	"regexp"
 	"strings"
 
-	"go.opentelemetry.io/otel/internal/global"
+	"github.com/hanzoai/telemetry-go/internal/global"
 )
 
 var (

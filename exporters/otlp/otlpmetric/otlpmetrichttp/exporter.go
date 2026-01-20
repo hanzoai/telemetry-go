@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package otlpmetrichttp // import "go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetrichttp"
+package otlpmetrichttp // import "github.com/hanzoai/telemetry-go/exporters/otlp/otlpmetric/otlpmetrichttp"
 
 import (
 	"context"
@@ -11,11 +11,11 @@ import (
 
 	metricpb "go.opentelemetry.io/proto/otlp/metrics/v1"
 
-	"go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetrichttp/internal/oconf"
-	"go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetrichttp/internal/transform"
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
+	"github.com/hanzoai/telemetry-go/exporters/otlp/otlpmetric/otlpmetrichttp/internal/oconf"
+	"github.com/hanzoai/telemetry-go/exporters/otlp/otlpmetric/otlpmetrichttp/internal/transform"
+	"github.com/hanzoai/telemetry-go/internal/global"
+	"github.com/hanzoai/telemetry-go/sdk/metric"
+	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata"
 )
 
 // Exporter is a OpenTelemetry metric Exporter using protobufs over HTTP.

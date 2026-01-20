@@ -2,9 +2,9 @@
 // SPDX-License-Identifier: Apache-2.0
 
 // Package internal provides internal functionality for the opencensus package.
-package internal // import "go.opentelemetry.io/otel/bridge/opencensus/internal"
+package internal // import "github.com/hanzoai/telemetry-go/bridge/opencensus/internal"
 
-import "go.opentelemetry.io/otel"
+import "github.com/hanzoai/telemetry-go"
 
 // Handle is the package level function to handle errors. It can be
 // overwritten for testing.

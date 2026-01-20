@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package stdouttrace // import "go.opentelemetry.io/otel/exporters/stdout/stdouttrace"
+package stdouttrace // import "github.com/hanzoai/telemetry-go/exporters/stdout/stdouttrace"
 
 import (
 	"io"

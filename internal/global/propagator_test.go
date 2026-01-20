@@ -6,7 +6,7 @@ package global
 import (
 	"testing"
 
-	"go.opentelemetry.io/otel/internal/internaltest"
+	"github.com/hanzoai/telemetry-go/internal/internaltest"
 )
 
 func TestTextMapPropagatorDelegation(t *testing.T) {

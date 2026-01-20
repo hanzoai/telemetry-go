@@ -1,13 +1,13 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package aggregate // import "go.opentelemetry.io/otel/sdk/metric/internal/aggregate"
+package aggregate // import "github.com/hanzoai/telemetry-go/sdk/metric/internal/aggregate"
 
 import (
 	"sync"
 
-	"go.opentelemetry.io/otel/sdk/metric/exemplar"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
+	"github.com/hanzoai/telemetry-go/sdk/metric/exemplar"
+	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata"
 )
 
 var exemplarPool = sync.Pool{

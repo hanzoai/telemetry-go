@@ -6,9 +6,9 @@ package otlptracegrpc_test
 import (
 	"context"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc"
-	"go.opentelemetry.io/otel/sdk/trace"
+	"github.com/hanzoai/telemetry-go"
+	"github.com/hanzoai/telemetry-go/exporters/otlp/otlptrace/otlptracegrpc"
+	"github.com/hanzoai/telemetry-go/sdk/trace"
 )
 
 func Example() {

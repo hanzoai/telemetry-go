@@ -1,14 +1,14 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package opentracing // import "go.opentelemetry.io/otel/bridge/opentracing"
+package opentracing // import "github.com/hanzoai/telemetry-go/bridge/opentracing"
 
 import (
 	"sync"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/trace"
-	"go.opentelemetry.io/otel/trace/embedded"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/trace"
+	"github.com/hanzoai/telemetry-go/trace/embedded"
 )
 
 // TracerProvider is an OpenTelemetry TracerProvider that wraps an OpenTracing

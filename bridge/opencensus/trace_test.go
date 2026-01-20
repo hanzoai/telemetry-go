@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package opencensus // import "go.opentelemetry.io/otel/bridge/opencensus"
+package opencensus // import "github.com/hanzoai/telemetry-go/bridge/opencensus"
 
 import (
 	"strings"
@@ -11,9 +11,9 @@ import (
 	"github.com/stretchr/testify/require"
 	octrace "go.opencensus.io/trace"
 
-	"go.opentelemetry.io/otel/sdk/trace"
-	"go.opentelemetry.io/otel/sdk/trace/tracetest"
-	oteltrace "go.opentelemetry.io/otel/trace"
+	"github.com/hanzoai/telemetry-go/sdk/trace"
+	"github.com/hanzoai/telemetry-go/sdk/trace/tracetest"
+	oteltrace "github.com/hanzoai/telemetry-go/trace"
 )
 
 func TestNewTraceBridge(t *testing.T) {

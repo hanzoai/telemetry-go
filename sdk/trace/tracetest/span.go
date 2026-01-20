@@ -1,16 +1,16 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package tracetest // import "go.opentelemetry.io/otel/sdk/trace/tracetest"
+package tracetest // import "github.com/hanzoai/telemetry-go/sdk/trace/tracetest"
 
 import (
 	"time"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/resource"
-	tracesdk "go.opentelemetry.io/otel/sdk/trace"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/sdk/instrumentation"
+	"github.com/hanzoai/telemetry-go/sdk/resource"
+	tracesdk "github.com/hanzoai/telemetry-go/sdk/trace"
+	"github.com/hanzoai/telemetry-go/trace"
 )
 
 // SpanStubs is a slice of SpanStub use for testing an SDK.

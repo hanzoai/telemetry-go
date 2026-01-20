@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package trace // import "go.opentelemetry.io/otel/sdk/trace"
+package trace // import "github.com/hanzoai/telemetry-go/sdk/trace"
 
 import (
 	"context"
@@ -9,17 +9,17 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/resource"
-	"go.opentelemetry.io/otel/sdk/trace/internal/observ"
-	"go.opentelemetry.io/otel/trace"
-	"go.opentelemetry.io/otel/trace/embedded"
-	"go.opentelemetry.io/otel/trace/noop"
+	"github.com/hanzoai/telemetry-go"
+	"github.com/hanzoai/telemetry-go/internal/global"
+	"github.com/hanzoai/telemetry-go/sdk/instrumentation"
+	"github.com/hanzoai/telemetry-go/sdk/resource"
+	"github.com/hanzoai/telemetry-go/sdk/trace/internal/observ"
+	"github.com/hanzoai/telemetry-go/trace"
+	"github.com/hanzoai/telemetry-go/trace/embedded"
+	"github.com/hanzoai/telemetry-go/trace/noop"
 )
 
-const defaultTracerName = "go.opentelemetry.io/otel/sdk/tracer"
+const defaultTracerName = "github.com/hanzoai/telemetry-go/sdk/tracer"
 
 // tracerProviderConfig.
 type tracerProviderConfig struct {

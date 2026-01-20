@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package otlptracehttp // import "go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp"
+package otlptracehttp // import "github.com/hanzoai/telemetry-go/exporters/otlp/otlptrace/otlptracehttp"
 
 import (
 	"bytes"
@@ -22,12 +22,12 @@ import (
 	tracepb "go.opentelemetry.io/proto/otlp/trace/v1"
 	"google.golang.org/protobuf/proto"
 
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp/internal"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp/internal/counter"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp/internal/observ"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp/internal/otlpconfig"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp/internal/retry"
+	"github.com/hanzoai/telemetry-go/exporters/otlp/otlptrace"
+	"github.com/hanzoai/telemetry-go/exporters/otlp/otlptrace/otlptracehttp/internal"
+	"github.com/hanzoai/telemetry-go/exporters/otlp/otlptrace/otlptracehttp/internal/counter"
+	"github.com/hanzoai/telemetry-go/exporters/otlp/otlptrace/otlptracehttp/internal/observ"
+	"github.com/hanzoai/telemetry-go/exporters/otlp/otlptrace/otlptracehttp/internal/otlpconfig"
+	"github.com/hanzoai/telemetry-go/exporters/otlp/otlptrace/otlptracehttp/internal/retry"
 )
 
 const contentTypeProto = "application/x-protobuf"

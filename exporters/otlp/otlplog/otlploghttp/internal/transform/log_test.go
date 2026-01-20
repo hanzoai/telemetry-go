@@ -16,14 +16,14 @@ import (
 	lpb "go.opentelemetry.io/proto/otlp/logs/v1"
 	rpb "go.opentelemetry.io/proto/otlp/resource/v1"
 
-	"go.opentelemetry.io/otel/attribute"
-	api "go.opentelemetry.io/otel/log"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/log"
-	"go.opentelemetry.io/otel/sdk/log/logtest"
-	"go.opentelemetry.io/otel/sdk/resource"
-	semconv "go.opentelemetry.io/otel/semconv/v1.37.0"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/hanzoai/telemetry-go/attribute"
+	api "github.com/hanzoai/telemetry-go/log"
+	"github.com/hanzoai/telemetry-go/sdk/instrumentation"
+	"github.com/hanzoai/telemetry-go/sdk/log"
+	"github.com/hanzoai/telemetry-go/sdk/log/logtest"
+	"github.com/hanzoai/telemetry-go/sdk/resource"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
+	"github.com/hanzoai/telemetry-go/trace"
 )
 
 var (

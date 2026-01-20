@@ -15,15 +15,15 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/codes"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/resource"
-	tracesdk "go.opentelemetry.io/otel/sdk/trace"
-	"go.opentelemetry.io/otel/sdk/trace/tracetest"
-	semconv125 "go.opentelemetry.io/otel/semconv/v1.25.0"
-	semconv "go.opentelemetry.io/otel/semconv/v1.37.0"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/codes"
+	"github.com/hanzoai/telemetry-go/sdk/instrumentation"
+	"github.com/hanzoai/telemetry-go/sdk/resource"
+	tracesdk "github.com/hanzoai/telemetry-go/sdk/trace"
+	"github.com/hanzoai/telemetry-go/sdk/trace/tracetest"
+	semconv125 "github.com/hanzoai/telemetry-go/semconv/v1.25.0"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
+	"github.com/hanzoai/telemetry-go/trace"
 )
 
 func TestModelConversion(t *testing.T) {

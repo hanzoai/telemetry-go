@@ -11,8 +11,8 @@ import (
 	octrace "go.opencensus.io/trace"
 	"go.opencensus.io/trace/tracestate"
 
-	"go.opentelemetry.io/otel/bridge/opencensus/internal/otel2oc"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/hanzoai/telemetry-go/bridge/opencensus/internal/otel2oc"
+	"github.com/hanzoai/telemetry-go/trace"
 )
 
 func TestSpanContextConversion(t *testing.T) {

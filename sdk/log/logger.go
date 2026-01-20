@@ -1,17 +1,17 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package log // import "go.opentelemetry.io/otel/sdk/log"
+package log // import "github.com/hanzoai/telemetry-go/sdk/log"
 
 import (
 	"context"
 	"time"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/log"
-	"go.opentelemetry.io/otel/log/embedded"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/hanzoai/telemetry-go"
+	"github.com/hanzoai/telemetry-go/log"
+	"github.com/hanzoai/telemetry-go/log/embedded"
+	"github.com/hanzoai/telemetry-go/sdk/instrumentation"
+	"github.com/hanzoai/telemetry-go/trace"
 )
 
 var now = time.Now

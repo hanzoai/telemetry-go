@@ -7,13 +7,13 @@ Logs API.
 
 This package is experimental. It will be deprecated and removed when the [log]
 package becomes stable. Its functionality will be migrated to
-go.opentelemetry.io/otel.
+github.com/hanzoai/telemetry-go.
 */
-package global // import "go.opentelemetry.io/otel/log/global"
+package global // import "github.com/hanzoai/telemetry-go/log/global"
 
 import (
-	"go.opentelemetry.io/otel/log"
-	"go.opentelemetry.io/otel/log/internal/global"
+	"github.com/hanzoai/telemetry-go/log"
+	"github.com/hanzoai/telemetry-go/log/internal/global"
 )
 
 // Logger returns a [log.Logger] configured with the provided name and options

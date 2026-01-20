@@ -1,12 +1,12 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package otel // import "go.opentelemetry.io/otel"
+package otel // import "github.com/hanzoai/telemetry-go"
 
 import (
 	"github.com/go-logr/logr"
 
-	"go.opentelemetry.io/otel/internal/global"
+	"github.com/hanzoai/telemetry-go/internal/global"
 )
 
 // SetLogger configures the logger used internally to opentelemetry.

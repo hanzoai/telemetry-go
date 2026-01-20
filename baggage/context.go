@@ -1,12 +1,12 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package baggage // import "go.opentelemetry.io/otel/baggage"
+package baggage // import "github.com/hanzoai/telemetry-go/baggage"
 
 import (
 	"context"
 
-	"go.opentelemetry.io/otel/internal/baggage"
+	"github.com/hanzoai/telemetry-go/internal/baggage"
 )
 
 // ContextWithBaggage returns a copy of parent with baggage.

@@ -14,17 +14,17 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/sdk"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/log"
-	"go.opentelemetry.io/otel/sdk/log/internal/observ"
-	"go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata/metricdatatest"
-	semconv "go.opentelemetry.io/otel/semconv/v1.37.0"
-	"go.opentelemetry.io/otel/semconv/v1.37.0/otelconv"
+	"github.com/hanzoai/telemetry-go"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/sdk"
+	"github.com/hanzoai/telemetry-go/sdk/instrumentation"
+	"github.com/hanzoai/telemetry-go/sdk/log"
+	"github.com/hanzoai/telemetry-go/sdk/log/internal/observ"
+	"github.com/hanzoai/telemetry-go/sdk/metric"
+	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata"
+	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata/metricdatatest"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
+	"github.com/hanzoai/telemetry-go/semconv/v1.37.0/otelconv"
 )
 
 type exporter struct {
@@ -270,7 +270,7 @@ func TestSimpleLogProcessorObservability(t *testing.T) {
 
 				want := metricdata.ScopeMetrics{
 					Scope: instrumentation.Scope{
-						Name:      "go.opentelemetry.io/otel/sdk/log/internal/observ",
+						Name:      "github.com/hanzoai/telemetry-go/sdk/log/internal/observ",
 						Version:   sdk.Version(),
 						SchemaURL: semconv.SchemaURL,
 					},

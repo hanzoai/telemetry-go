@@ -1,4 +1,4 @@
-module go.opentelemetry.io/otel/internal/tools
+module github.com/hanzoai/telemetry-go/internal/tools
 
 go 1.24.0
 

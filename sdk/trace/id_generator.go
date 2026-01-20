@@ -1,14 +1,14 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package trace // import "go.opentelemetry.io/otel/sdk/trace"
+package trace // import "github.com/hanzoai/telemetry-go/sdk/trace"
 
 import (
 	"context"
 	"encoding/binary"
 	"math/rand/v2"
 
-	"go.opentelemetry.io/otel/trace"
+	"github.com/hanzoai/telemetry-go/trace"
 )
 
 // IDGenerator allows custom generators for TraceID and SpanID.

@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"go.opentelemetry.io/otel/log"
+	"github.com/hanzoai/telemetry-go/log"
 )
 
 func BenchmarkRecord(b *testing.B) {

@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package prometheus // import "go.opentelemetry.io/otel/exporters/prometheus"
+package prometheus // import "github.com/hanzoai/telemetry-go/exporters/prometheus"
 
 import (
 	"context"
@@ -18,14 +18,14 @@ import (
 	"github.com/prometheus/otlptranslator"
 	"google.golang.org/protobuf/proto"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/exporters/prometheus/internal/counter"
-	"go.opentelemetry.io/otel/exporters/prometheus/internal/observ"
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
-	"go.opentelemetry.io/otel/sdk/resource"
+	"github.com/hanzoai/telemetry-go"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/exporters/prometheus/internal/counter"
+	"github.com/hanzoai/telemetry-go/exporters/prometheus/internal/observ"
+	"github.com/hanzoai/telemetry-go/internal/global"
+	"github.com/hanzoai/telemetry-go/sdk/metric"
+	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata"
+	"github.com/hanzoai/telemetry-go/sdk/resource"
 )
 
 const (

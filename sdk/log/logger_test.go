@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package log // import "go.opentelemetry.io/otel/sdk/log"
+package log // import "github.com/hanzoai/telemetry-go/sdk/log"
 
 import (
 	"context"
@@ -13,19 +13,19 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/log"
-	"go.opentelemetry.io/otel/metric"
-	"go.opentelemetry.io/otel/sdk"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	sdkmetric "go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata/metricdatatest"
-	"go.opentelemetry.io/otel/sdk/resource"
-	semconv "go.opentelemetry.io/otel/semconv/v1.37.0"
-	"go.opentelemetry.io/otel/semconv/v1.37.0/otelconv"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/hanzoai/telemetry-go"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/log"
+	"github.com/hanzoai/telemetry-go/metric"
+	"github.com/hanzoai/telemetry-go/sdk"
+	"github.com/hanzoai/telemetry-go/sdk/instrumentation"
+	sdkmetric "github.com/hanzoai/telemetry-go/sdk/metric"
+	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata"
+	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata/metricdatatest"
+	"github.com/hanzoai/telemetry-go/sdk/resource"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
+	"github.com/hanzoai/telemetry-go/semconv/v1.37.0/otelconv"
+	"github.com/hanzoai/telemetry-go/trace"
 )
 
 func TestLoggerEmit(t *testing.T) {
@@ -449,7 +449,7 @@ func TestLoggerObservability(t *testing.T) {
 			require.Len(t, gotMetrics.ScopeMetrics, 1)
 			sm := gotMetrics.ScopeMetrics[0]
 			assert.Equal(t, instrumentation.Scope{
-				Name:      "go.opentelemetry.io/otel/sdk/log",
+				Name:      "github.com/hanzoai/telemetry-go/sdk/log",
 				Version:   sdk.Version(),
 				SchemaURL: semconv.SchemaURL,
 			}, sm.Scope)

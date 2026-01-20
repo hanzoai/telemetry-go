@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package trace // import "go.opentelemetry.io/otel/trace"
+package trace // import "github.com/hanzoai/telemetry-go/trace"
 
 import (
 	"context"
@@ -18,11 +18,11 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/codes"
-	semconv "go.opentelemetry.io/otel/semconv/v1.37.0"
-	"go.opentelemetry.io/otel/trace/embedded"
-	"go.opentelemetry.io/otel/trace/internal/telemetry"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/codes"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
+	"github.com/hanzoai/telemetry-go/trace/embedded"
+	"github.com/hanzoai/telemetry-go/trace/internal/telemetry"
 )
 
 // newAutoTracerProvider returns an auto-instrumentable [trace.TracerProvider].

@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package global // import "go.opentelemetry.io/otel/internal/global"
+package global // import "github.com/hanzoai/telemetry-go/internal/global"
 
 /*
 This file contains the forwarding implementation of the TracerProvider used as
@@ -25,12 +25,10 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"go.opentelemetry.io/auto/sdk"
-
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/codes"
-	"go.opentelemetry.io/otel/trace"
-	"go.opentelemetry.io/otel/trace/embedded"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/codes"
+	"github.com/hanzoai/telemetry-go/trace"
+	"github.com/hanzoai/telemetry-go/trace/embedded"
 )
 
 // tracerProvider is a placeholder for a configured SDK TracerProvider.
@@ -177,10 +175,8 @@ func (t *tracer) newSpan(
 	// needs to be a parameter so that pointer can be reliably determined, it
 	// should not be read from the global.
 
-	if *autoSpan {
-		tracer := sdk.TracerProvider().Tracer(t.name, t.opts...)
-		return tracer.Start(ctx, name, opts...)
-	}
+	// Auto-instrumentation disabled in Hanzo fork
+	_ = autoSpan
 
 	s := nonRecordingSpan{sc: trace.SpanContextFromContext(ctx), tracer: t}
 	ctx = trace.ContextWithSpan(ctx, s)

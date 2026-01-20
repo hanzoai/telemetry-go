@@ -1,15 +1,15 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package semconv // import "go.opentelemetry.io/otel/semconv/v1.12.0"
+package semconv // import "github.com/hanzoai/telemetry-go/semconv/v1.12.0"
 
 import (
 	"net/http"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/codes"
-	"go.opentelemetry.io/otel/semconv/internal"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/codes"
+	"github.com/hanzoai/telemetry-go/semconv/internal"
+	"github.com/hanzoai/telemetry-go/trace"
 )
 
 // HTTP scheme attributes.

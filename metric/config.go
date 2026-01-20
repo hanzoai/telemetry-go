@@ -1,12 +1,12 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package metric // import "go.opentelemetry.io/otel/metric"
+package metric // import "github.com/hanzoai/telemetry-go/metric"
 
 import (
 	"slices"
 
-	"go.opentelemetry.io/otel/attribute"
+	"github.com/hanzoai/telemetry-go/attribute"
 )
 
 // MeterConfig contains options for Meters.

@@ -1,14 +1,14 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package resource // import "go.opentelemetry.io/otel/sdk/resource"
+package resource // import "github.com/hanzoai/telemetry-go/sdk/resource"
 
 import (
 	"context"
 	"errors"
 	"strings"
 
-	semconv "go.opentelemetry.io/otel/semconv/v1.37.0"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
 )
 
 type hostIDProvider func() (string, error)

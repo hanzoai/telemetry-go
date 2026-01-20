@@ -10,10 +10,10 @@ import (
 	"io"
 	"os"
 
-	logapi "go.opentelemetry.io/otel/log"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/log"
-	"go.opentelemetry.io/otel/sdk/log/logtest"
+	logapi "github.com/hanzoai/telemetry-go/log"
+	"github.com/hanzoai/telemetry-go/sdk/instrumentation"
+	"github.com/hanzoai/telemetry-go/sdk/log"
+	"github.com/hanzoai/telemetry-go/sdk/log/logtest"
 )
 
 func ExampleRecordFactory() {

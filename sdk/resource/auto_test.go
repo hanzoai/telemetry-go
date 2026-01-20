@@ -11,8 +11,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/sdk/resource"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/sdk/resource"
 )
 
 type detector struct {

@@ -1,9 +1,9 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package instrumentation // import "go.opentelemetry.io/otel/sdk/instrumentation"
+package instrumentation // import "github.com/hanzoai/telemetry-go/sdk/instrumentation"
 
-import "go.opentelemetry.io/otel/attribute"
+import "github.com/hanzoai/telemetry-go/attribute"
 
 // Scope represents the instrumentation scope.
 type Scope struct {

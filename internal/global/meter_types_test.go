@@ -1,13 +1,13 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package global // import "go.opentelemetry.io/otel/internal/global"
+package global // import "github.com/hanzoai/telemetry-go/internal/global"
 
 import (
 	"context"
 
-	"go.opentelemetry.io/otel/metric"
-	"go.opentelemetry.io/otel/metric/embedded"
+	"github.com/hanzoai/telemetry-go/metric"
+	"github.com/hanzoai/telemetry-go/metric/embedded"
 )
 
 type testMeterProvider struct {

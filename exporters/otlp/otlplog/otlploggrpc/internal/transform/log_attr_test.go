@@ -11,7 +11,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"go.opentelemetry.io/otel/log"
+	"github.com/hanzoai/telemetry-go/log"
 	cpb "go.opentelemetry.io/proto/otlp/common/v1"
 )
 

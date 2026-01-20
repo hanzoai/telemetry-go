@@ -1,13 +1,13 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package exemplar // import "go.opentelemetry.io/otel/sdk/metric/exemplar"
+package exemplar // import "github.com/hanzoai/telemetry-go/sdk/metric/exemplar"
 
 import (
 	"context"
 	"time"
 
-	"go.opentelemetry.io/otel/attribute"
+	"github.com/hanzoai/telemetry-go/attribute"
 )
 
 // Reservoir holds the sampled exemplar of measurements made.

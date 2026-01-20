@@ -1,17 +1,17 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package metric // import "go.opentelemetry.io/otel/sdk/metric"
+package metric // import "github.com/hanzoai/telemetry-go/sdk/metric"
 
 import (
 	"context"
 	"sync/atomic"
 
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/metric"
-	"go.opentelemetry.io/otel/metric/embedded"
-	"go.opentelemetry.io/otel/metric/noop"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
+	"github.com/hanzoai/telemetry-go/internal/global"
+	"github.com/hanzoai/telemetry-go/metric"
+	"github.com/hanzoai/telemetry-go/metric/embedded"
+	"github.com/hanzoai/telemetry-go/metric/noop"
+	"github.com/hanzoai/telemetry-go/sdk/instrumentation"
 )
 
 // MeterProvider handles the creation and coordination of Meters. All Meters

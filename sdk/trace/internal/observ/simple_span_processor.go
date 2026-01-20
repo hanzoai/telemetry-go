@@ -1,20 +1,20 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package observ // import "go.opentelemetry.io/otel/sdk/trace/internal/observ"
+package observ // import "github.com/hanzoai/telemetry-go/sdk/trace/internal/observ"
 
 import (
 	"context"
 	"fmt"
 	"sync"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/metric"
-	"go.opentelemetry.io/otel/sdk"
-	"go.opentelemetry.io/otel/sdk/internal/x"
-	semconv "go.opentelemetry.io/otel/semconv/v1.37.0"
-	"go.opentelemetry.io/otel/semconv/v1.37.0/otelconv"
+	"github.com/hanzoai/telemetry-go"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/metric"
+	"github.com/hanzoai/telemetry-go/sdk"
+	"github.com/hanzoai/telemetry-go/sdk/internal/x"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
+	"github.com/hanzoai/telemetry-go/semconv/v1.37.0/otelconv"
 )
 
 var measureAttrsPool = sync.Pool{

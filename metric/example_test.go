@@ -12,10 +12,10 @@ import (
 	"runtime"
 	"time"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/metric"
-	semconv "go.opentelemetry.io/otel/semconv/v1.37.0"
+	"github.com/hanzoai/telemetry-go"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/metric"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
 )
 
 var meter = otel.Meter("my-service-meter")

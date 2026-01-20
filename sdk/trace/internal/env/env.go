@@ -3,13 +3,13 @@
 
 // Package env provides types and functionality for environment variable support
 // in the OpenTelemetry SDK.
-package env // import "go.opentelemetry.io/otel/sdk/trace/internal/env"
+package env // import "github.com/hanzoai/telemetry-go/sdk/trace/internal/env"
 
 import (
 	"os"
 	"strconv"
 
-	"go.opentelemetry.io/otel/internal/global"
+	"github.com/hanzoai/telemetry-go/internal/global"
 )
 
 // Environment variable names.

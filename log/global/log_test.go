@@ -1,15 +1,15 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package global // import "go.opentelemetry.io/otel/log/global"
+package global // import "github.com/hanzoai/telemetry-go/log/global"
 
 import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
 
-	"go.opentelemetry.io/otel/log"
-	"go.opentelemetry.io/otel/log/noop"
+	"github.com/hanzoai/telemetry-go/log"
+	"github.com/hanzoai/telemetry-go/log/noop"
 )
 
 func TestMultipleGlobalLoggerProvider(t *testing.T) {

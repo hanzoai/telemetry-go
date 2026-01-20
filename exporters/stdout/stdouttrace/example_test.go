@@ -8,12 +8,12 @@ import (
 	"fmt"
 	"log"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/exporters/stdout/stdouttrace"
-	"go.opentelemetry.io/otel/sdk/resource"
-	sdktrace "go.opentelemetry.io/otel/sdk/trace"
-	semconv "go.opentelemetry.io/otel/semconv/v1.37.0"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/hanzoai/telemetry-go"
+	"github.com/hanzoai/telemetry-go/exporters/stdout/stdouttrace"
+	"github.com/hanzoai/telemetry-go/sdk/resource"
+	sdktrace "github.com/hanzoai/telemetry-go/sdk/trace"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
+	"github.com/hanzoai/telemetry-go/trace"
 )
 
 const (

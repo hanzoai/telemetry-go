@@ -15,7 +15,7 @@ import (
 	"github.com/stretchr/testify/require"
 	logpb "go.opentelemetry.io/proto/otlp/logs/v1"
 
-	"go.opentelemetry.io/otel/sdk/log"
+	"github.com/hanzoai/telemetry-go/sdk/log"
 )
 
 func TestExporterExportErrors(t *testing.T) {

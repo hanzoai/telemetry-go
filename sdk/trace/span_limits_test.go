@@ -10,9 +10,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/sdk/trace/internal/env"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/sdk/trace/internal/env"
+	"github.com/hanzoai/telemetry-go/trace"
 )
 
 func TestSettingSpanLimits(t *testing.T) {

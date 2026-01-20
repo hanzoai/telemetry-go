@@ -1,16 +1,16 @@
-module go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc
+module github.com/hanzoai/telemetry-go/exporters/otlp/otlptrace/otlptracegrpc
 
 go 1.24.0
 
 require (
 	github.com/cenkalti/backoff/v5 v5.0.3
+	github.com/hanzoai/telemetry-go v1.39.0
+	github.com/hanzoai/telemetry-go/exporters/otlp/otlptrace v1.39.0
+	github.com/hanzoai/telemetry-go/metric v1.39.0
+	github.com/hanzoai/telemetry-go/sdk v1.39.0
+	github.com/hanzoai/telemetry-go/sdk/metric v1.39.0
+	github.com/hanzoai/telemetry-go/trace v1.39.0
 	github.com/stretchr/testify v1.11.1
-	go.opentelemetry.io/otel v1.39.0
-	go.opentelemetry.io/otel/exporters/otlp/otlptrace v1.39.0
-	go.opentelemetry.io/otel/metric v1.39.0
-	go.opentelemetry.io/otel/sdk v1.39.0
-	go.opentelemetry.io/otel/sdk/metric v1.39.0
-	go.opentelemetry.io/otel/trace v1.39.0
 	go.opentelemetry.io/proto/otlp v1.9.0
 	go.uber.org/goleak v1.3.0
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20260114163908-3f89685c29c3
@@ -26,7 +26,7 @@ require (
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.27.4 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	go.opentelemetry.io/auto/sdk v1.2.1 // indirect
+	github.com/rogpeppe/go-internal v1.14.1 // indirect
 	golang.org/x/net v0.49.0 // indirect
 	golang.org/x/sys v0.40.0 // indirect
 	golang.org/x/text v0.33.0 // indirect
@@ -34,14 +34,14 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace go.opentelemetry.io/otel => ../../../..
+replace github.com/hanzoai/telemetry-go => ../../../..
 
-replace go.opentelemetry.io/otel/sdk => ../../../../sdk
+replace github.com/hanzoai/telemetry-go/sdk => ../../../../sdk
 
-replace go.opentelemetry.io/otel/exporters/otlp/otlptrace => ../
+replace github.com/hanzoai/telemetry-go/exporters/otlp/otlptrace => ../
 
-replace go.opentelemetry.io/otel/trace => ../../../../trace
+replace github.com/hanzoai/telemetry-go/trace => ../../../../trace
 
-replace go.opentelemetry.io/otel/metric => ../../../../metric
+replace github.com/hanzoai/telemetry-go/metric => ../../../../metric
 
-replace go.opentelemetry.io/otel/sdk/metric => ../../../../sdk/metric
+replace github.com/hanzoai/telemetry-go/sdk/metric => ../../../../sdk/metric

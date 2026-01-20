@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"go.opentelemetry.io/otel/trace"
+	"github.com/hanzoai/telemetry-go/trace"
 )
 
 func TestNewIDs(t *testing.T) {

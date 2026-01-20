@@ -1,12 +1,12 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package tracetransform // import "go.opentelemetry.io/otel/exporters/otlp/otlptrace/internal/tracetransform"
+package tracetransform // import "github.com/hanzoai/telemetry-go/exporters/otlp/otlptrace/internal/tracetransform"
 
 import (
 	resourcepb "go.opentelemetry.io/proto/otlp/resource/v1"
 
-	"go.opentelemetry.io/otel/sdk/resource"
+	"github.com/hanzoai/telemetry-go/sdk/resource"
 )
 
 // Resource transforms a Resource into an OTLP Resource.

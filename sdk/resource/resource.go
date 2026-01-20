@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package resource // import "go.opentelemetry.io/otel/sdk/resource"
+package resource // import "github.com/hanzoai/telemetry-go/sdk/resource"
 
 import (
 	"context"
@@ -9,9 +9,9 @@ import (
 	"fmt"
 	"sync"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/sdk/internal/x"
+	"github.com/hanzoai/telemetry-go"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/sdk/internal/x"
 )
 
 // Resource describes an entity about which identifying information

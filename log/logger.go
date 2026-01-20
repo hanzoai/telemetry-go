@@ -1,14 +1,14 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package log // import "go.opentelemetry.io/otel/log"
+package log // import "github.com/hanzoai/telemetry-go/log"
 
 import (
 	"context"
 	"slices"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/log/embedded"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/log/embedded"
 )
 
 // Logger emits log records.

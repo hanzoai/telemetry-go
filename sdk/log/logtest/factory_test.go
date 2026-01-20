@@ -10,12 +10,12 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/log"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	sdklog "go.opentelemetry.io/otel/sdk/log"
-	"go.opentelemetry.io/otel/sdk/resource"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/log"
+	"github.com/hanzoai/telemetry-go/sdk/instrumentation"
+	sdklog "github.com/hanzoai/telemetry-go/sdk/log"
+	"github.com/hanzoai/telemetry-go/sdk/resource"
+	"github.com/hanzoai/telemetry-go/trace"
 )
 
 func TestRecordFactoryEmpty(t *testing.T) {

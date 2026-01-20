@@ -10,12 +10,11 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/assert"
-	"go.opentelemetry.io/auto/sdk"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/trace"
-	"go.opentelemetry.io/otel/trace/embedded"
-	"go.opentelemetry.io/otel/trace/noop"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/trace"
+	"github.com/hanzoai/telemetry-go/trace/embedded"
+	"github.com/hanzoai/telemetry-go/trace/noop"
 )
 
 type fnTracerProvider struct {
@@ -286,12 +285,11 @@ func TestNewSpanType(t *testing.T) {
 	_, got := tracer.newSpan(ctx, autoInstEnabled, "", nil)
 	assert.IsType(t, nonRecordingSpan{}, got, "default span type")
 
+	// Auto-instrumentation disabled in Hanzo fork - always returns nonRecordingSpan
 	orig := *autoInstEnabled
 	*autoInstEnabled = true
 	t.Cleanup(func() { *autoInstEnabled = orig })
 
 	_, got = tracer.newSpan(ctx, autoInstEnabled, "", nil)
-	autoTracer := sdk.TracerProvider().Tracer("")
-	_, span := autoTracer.Start(ctx, "")
-	assert.IsType(t, span, got, "auto span type")
+	assert.IsType(t, nonRecordingSpan{}, got, "auto-instrumentation disabled, returns nonRecordingSpan")
 }

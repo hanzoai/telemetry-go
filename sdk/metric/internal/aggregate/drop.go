@@ -1,13 +1,13 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package aggregate // import "go.opentelemetry.io/otel/sdk/metric/internal/aggregate"
+package aggregate // import "github.com/hanzoai/telemetry-go/sdk/metric/internal/aggregate"
 
 import (
 	"context"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/sdk/metric/exemplar"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/sdk/metric/exemplar"
 )
 
 // dropReservoir returns a [FilteredReservoir] that drops all measurements it is offered.

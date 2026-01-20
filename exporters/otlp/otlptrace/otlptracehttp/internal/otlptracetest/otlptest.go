@@ -6,17 +6,17 @@
 
 // Package otlptracetest provides testing utilities and framework for the
 // otlptrace exporters.
-package otlptracetest // import "go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp/internal/otlptracetest"
+package otlptracetest // import "github.com/hanzoai/telemetry-go/exporters/otlp/otlptrace/otlptracehttp/internal/otlptracetest"
 
 import (
 	"context"
 	"testing"
 	"time"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/exporters/otlp/otlptrace"
-	"go.opentelemetry.io/otel/sdk/resource"
-	sdktrace "go.opentelemetry.io/otel/sdk/trace"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/exporters/otlp/otlptrace"
+	"github.com/hanzoai/telemetry-go/sdk/resource"
+	sdktrace "github.com/hanzoai/telemetry-go/sdk/trace"
 	commonpb "go.opentelemetry.io/proto/otlp/common/v1"
 )
 

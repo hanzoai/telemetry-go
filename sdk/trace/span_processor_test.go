@@ -7,8 +7,8 @@ import (
 	"context"
 	"testing"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/trace"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/trace"
 )
 
 type testSpanProcessor struct {

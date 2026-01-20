@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 // Package internal provides internal functionality for the opencensus package.
-package internal // import "go.opentelemetry.io/otel/bridge/opencensus/internal/ocmetric"
+package internal // import "github.com/hanzoai/telemetry-go/bridge/opencensus/internal/ocmetric"
 
 import (
 	"cmp"
@@ -16,8 +16,8 @@ import (
 	ocmetricdata "go.opencensus.io/metric/metricdata"
 	octrace "go.opencensus.io/trace"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata"
 )
 
 var (

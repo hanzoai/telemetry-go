@@ -9,14 +9,14 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/otel"
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/metric/noop"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
-	"go.opentelemetry.io/otel/sdk/trace"
-	"go.opentelemetry.io/otel/sdk/trace/internal/observ"
-	"go.opentelemetry.io/otel/semconv/v1.37.0/otelconv"
-	tapi "go.opentelemetry.io/otel/trace"
+	"github.com/hanzoai/telemetry-go"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/metric/noop"
+	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata"
+	"github.com/hanzoai/telemetry-go/sdk/trace"
+	"github.com/hanzoai/telemetry-go/sdk/trace/internal/observ"
+	"github.com/hanzoai/telemetry-go/semconv/v1.37.0/otelconv"
+	tapi "github.com/hanzoai/telemetry-go/trace"
 )
 
 func live(dPts ...metricdata.DataPoint[int64]) metricdata.Metrics {

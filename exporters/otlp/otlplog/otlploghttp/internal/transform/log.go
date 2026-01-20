@@ -6,7 +6,7 @@
 
 // Package transform provides transformation functionality from the
 // sdk/log data-types into OTLP data-types.
-package transform // import "go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploghttp/internal/transform"
+package transform // import "github.com/hanzoai/telemetry-go/exporters/otlp/otlplog/otlploghttp/internal/transform"
 
 import (
 	"time"
@@ -15,10 +15,10 @@ import (
 	lpb "go.opentelemetry.io/proto/otlp/logs/v1"
 	rpb "go.opentelemetry.io/proto/otlp/resource/v1"
 
-	"go.opentelemetry.io/otel/attribute"
-	api "go.opentelemetry.io/otel/log"
-	"go.opentelemetry.io/otel/sdk/instrumentation"
-	"go.opentelemetry.io/otel/sdk/log"
+	"github.com/hanzoai/telemetry-go/attribute"
+	api "github.com/hanzoai/telemetry-go/log"
+	"github.com/hanzoai/telemetry-go/sdk/instrumentation"
+	"github.com/hanzoai/telemetry-go/sdk/log"
 )
 
 // ResourceLogs returns an slice of OTLP ResourceLogs generated from records.

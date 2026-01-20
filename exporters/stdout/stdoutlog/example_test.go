@@ -6,9 +6,9 @@ package stdoutlog_test
 import (
 	"context"
 
-	"go.opentelemetry.io/otel/exporters/stdout/stdoutlog"
-	"go.opentelemetry.io/otel/log/global"
-	"go.opentelemetry.io/otel/sdk/log"
+	"github.com/hanzoai/telemetry-go/exporters/stdout/stdoutlog"
+	"github.com/hanzoai/telemetry-go/log/global"
+	"github.com/hanzoai/telemetry-go/sdk/log"
 )
 
 func Example() {

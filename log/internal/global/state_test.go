@@ -11,9 +11,9 @@ import (
 	"github.com/go-logr/logr/testr"
 	"github.com/stretchr/testify/assert"
 
-	"go.opentelemetry.io/otel/internal/global"
-	"go.opentelemetry.io/otel/log"
-	"go.opentelemetry.io/otel/log/noop"
+	"github.com/hanzoai/telemetry-go/internal/global"
+	"github.com/hanzoai/telemetry-go/log"
+	"github.com/hanzoai/telemetry-go/log/noop"
 )
 
 func TestSetLoggerProvider(t *testing.T) {

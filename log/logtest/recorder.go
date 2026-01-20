@@ -1,16 +1,16 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package logtest // import "go.opentelemetry.io/otel/log/logtest"
+package logtest // import "github.com/hanzoai/telemetry-go/log/logtest"
 
 import (
 	"context"
 	"sync"
 	"time"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/log"
-	"go.opentelemetry.io/otel/log/embedded"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/log"
+	"github.com/hanzoai/telemetry-go/log/embedded"
 )
 
 type enabledFn func(context.Context, log.EnabledParameters) bool

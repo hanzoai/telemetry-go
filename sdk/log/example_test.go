@@ -8,15 +8,15 @@ import (
 	"fmt"
 	"strings"
 
-	logapi "go.opentelemetry.io/otel/log"
-	"go.opentelemetry.io/otel/log/global"
-	"go.opentelemetry.io/otel/sdk/log"
+	logapi "github.com/hanzoai/telemetry-go/log"
+	"github.com/hanzoai/telemetry-go/log/global"
+	"github.com/hanzoai/telemetry-go/sdk/log"
 )
 
 // Initialize OpenTelemetry Logs SDK and setup logging using a log bridge.
 func Example() {
 	// Create an exporter that will emit log records.
-	// E.g. use go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploghttp
+	// E.g. use github.com/hanzoai/telemetry-go/exporters/otlp/otlplog/otlploghttp
 	// to send logs using OTLP over HTTP:
 	// exporter, err := otlploghttp.New(ctx)
 	var exporter log.Exporter

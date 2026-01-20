@@ -3,13 +3,13 @@
 
 // Package tracetransform provides conversion functionality for the otlptrace
 // exporters.
-package tracetransform // import "go.opentelemetry.io/otel/exporters/otlp/otlptrace/internal/tracetransform"
+package tracetransform // import "github.com/hanzoai/telemetry-go/exporters/otlp/otlptrace/internal/tracetransform"
 
 import (
 	commonpb "go.opentelemetry.io/proto/otlp/common/v1"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/sdk/resource"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/sdk/resource"
 )
 
 // KeyValues transforms a slice of attribute KeyValues into OTLP key-values.

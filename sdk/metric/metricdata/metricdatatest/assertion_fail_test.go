@@ -3,12 +3,12 @@
 
 //go:build tests_fail
 
-package metricdatatest // import "go.opentelemetry.io/otel/sdk/metric/metricdata/metricdatatest"
+package metricdatatest // import "github.com/hanzoai/telemetry-go/sdk/metric/metricdata/metricdatatest"
 
 import (
 	"testing"
 
-	"go.opentelemetry.io/otel/attribute"
+	"github.com/hanzoai/telemetry-go/attribute"
 )
 
 // These tests are used to develop the failure messages of this package's

@@ -8,8 +8,8 @@ import (
 	"math/rand/v2"
 	"testing"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/sdk/resource"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/sdk/resource"
 )
 
 const conflict = 0.5

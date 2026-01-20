@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package prometheus // import "go.opentelemetry.io/otel/exporters/prometheus"
+package prometheus // import "github.com/hanzoai/telemetry-go/exporters/prometheus"
 
 import (
 	"context"
@@ -11,8 +11,8 @@ import (
 	"github.com/prometheus/otlptranslator"
 	"github.com/stretchr/testify/assert"
 
-	"go.opentelemetry.io/otel/sdk/metric"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
+	"github.com/hanzoai/telemetry-go/sdk/metric"
+	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata"
 )
 
 func TestNewConfig(t *testing.T) {

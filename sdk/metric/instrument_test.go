@@ -6,9 +6,9 @@ package metric
 import (
 	"testing"
 
-	"go.opentelemetry.io/otel/attribute"
-	"go.opentelemetry.io/otel/sdk/metric/internal/aggregate"
-	"go.opentelemetry.io/otel/sdk/metric/metricdata"
+	"github.com/hanzoai/telemetry-go/attribute"
+	"github.com/hanzoai/telemetry-go/sdk/metric/internal/aggregate"
+	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata"
 )
 
 func BenchmarkInstrument(b *testing.B) {

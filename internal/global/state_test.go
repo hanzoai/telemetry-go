@@ -8,11 +8,11 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"go.opentelemetry.io/otel/metric"
-	metricnoop "go.opentelemetry.io/otel/metric/noop"
-	"go.opentelemetry.io/otel/propagation"
-	"go.opentelemetry.io/otel/trace"
-	tracenoop "go.opentelemetry.io/otel/trace/noop"
+	"github.com/hanzoai/telemetry-go/metric"
+	metricnoop "github.com/hanzoai/telemetry-go/metric/noop"
+	"github.com/hanzoai/telemetry-go/propagation"
+	"github.com/hanzoai/telemetry-go/trace"
+	tracenoop "github.com/hanzoai/telemetry-go/trace/noop"
 )
 
 type nonComparableErrorHandler struct {
