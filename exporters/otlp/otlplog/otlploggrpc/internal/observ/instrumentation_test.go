@@ -19,8 +19,8 @@ import (
 	"github.com/hanzoai/telemetry-go/sdk/metric"
 	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata"
 	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata/metricdatatest"
-	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
-	"github.com/hanzoai/telemetry-go/semconv/v1.37.0/otelconv"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.39.0"
+	"github.com/hanzoai/telemetry-go/semconv/v1.39.0/otelconv"
 )
 
 const (
@@ -175,7 +175,7 @@ func logOperationDurationMetrics(err error, code codes.Code) metricdata.Metrics 
 	attrs := []attribute.KeyValue{
 		semconv.OTelComponentName(GetComponentName(ID)),
 		semconv.OTelComponentTypeKey.String(string(otelconv.ComponentTypeOtlpGRPCLogExporter)),
-		semconv.RPCGRPCStatusCodeKey.Int64(int64(code)),
+		semconv.RPCResponseStatusCode(code.String()),
 	}
 	attrs = append(attrs, ServerAddrAttrs(TARGET)...)
 	if err != nil {

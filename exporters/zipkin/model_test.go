@@ -22,7 +22,8 @@ import (
 	tracesdk "github.com/hanzoai/telemetry-go/sdk/trace"
 	"github.com/hanzoai/telemetry-go/sdk/trace/tracetest"
 	semconv125 "github.com/hanzoai/telemetry-go/semconv/v1.25.0"
-	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
+	semconv138 "github.com/hanzoai/telemetry-go/semconv/v1.38.0"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.39.0"
 	"github.com/hanzoai/telemetry-go/trace"
 )
 
@@ -1154,7 +1155,7 @@ func TestRemoteEndpointTransformation(t *testing.T) {
 			data: tracetest.SpanStub{
 				SpanKind: trace.SpanKindProducer,
 				Attributes: []attribute.KeyValue{
-					semconv.PeerService("peer-service-test"),
+					semconv138.PeerService("peer-service-test"),
 					semconv.ServerAddress("server-address-test"),
 					semconv.NetworkPeerAddress("10.1.2.80"),
 				},

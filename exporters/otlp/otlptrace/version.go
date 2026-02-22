@@ -5,5 +5,5 @@ package otlptrace // import "github.com/hanzoai/telemetry-go/exporters/otlp/otlp
 
 // Version is the current release version of the OpenTelemetry OTLP trace exporter in use.
 func Version() string {
-	return "1.39.0"
+	return "1.40.0"
 }

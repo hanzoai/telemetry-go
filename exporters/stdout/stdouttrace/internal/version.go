@@ -5,4 +5,4 @@ package internal // import "github.com/hanzoai/telemetry-go/exporters/stdout/std
 
 // Version is the current release version of the OpenTelemetry stdouttrace
 // exporter in use.
-const Version = "1.39.0"
+const Version = "1.40.0"

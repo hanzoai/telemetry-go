@@ -17,7 +17,7 @@ import (
 	"github.com/hanzoai/telemetry-go/sdk/instrumentation"
 	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata"
 	"github.com/hanzoai/telemetry-go/sdk/resource"
-	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.39.0"
 	cpb "go.opentelemetry.io/proto/otlp/common/v1"
 	mpb "go.opentelemetry.io/proto/otlp/metrics/v1"
 	rpb "go.opentelemetry.io/proto/otlp/resource/v1"

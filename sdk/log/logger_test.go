@@ -23,8 +23,8 @@ import (
 	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata"
 	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata/metricdatatest"
 	"github.com/hanzoai/telemetry-go/sdk/resource"
-	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
-	"github.com/hanzoai/telemetry-go/semconv/v1.37.0/otelconv"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.39.0"
+	"github.com/hanzoai/telemetry-go/semconv/v1.39.0/otelconv"
 	"github.com/hanzoai/telemetry-go/trace"
 )
 

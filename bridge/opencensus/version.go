@@ -5,5 +5,5 @@ package opencensus // import "github.com/hanzoai/telemetry-go/bridge/opencensus"
 
 // Version is the current release version of the opencensus bridge.
 func Version() string {
-	return "1.39.0"
+	return "1.40.0"
 }

@@ -26,8 +26,8 @@ import (
 	"github.com/hanzoai/telemetry-go/sdk/metric"
 	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata"
 	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata/metricdatatest"
-	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
-	"github.com/hanzoai/telemetry-go/semconv/v1.37.0/otelconv"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.39.0"
+	"github.com/hanzoai/telemetry-go/semconv/v1.39.0/otelconv"
 )
 
 func testEncoderOption() stdoutmetric.Option {

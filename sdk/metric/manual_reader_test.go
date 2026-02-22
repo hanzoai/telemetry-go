@@ -22,7 +22,7 @@ import (
 	"github.com/hanzoai/telemetry-go/sdk/instrumentation"
 	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata"
 	"github.com/hanzoai/telemetry-go/sdk/resource"
-	"github.com/hanzoai/telemetry-go/semconv/v1.37.0/otelconv"
+	"github.com/hanzoai/telemetry-go/semconv/v1.39.0/otelconv"
 )
 
 func TestManualReader(t *testing.T) {
@@ -328,7 +328,7 @@ func createMetricDataTestProducerForManual() testSDKProducer {
 
 			// Create multiple scopes for comprehensive test data
 			var scopeMetrics []metricdata.ScopeMetrics
-			for i := 0; i < 20; i++ { // 20 scopes with 4 metrics each = 80 total metrics
+			for i := range 20 { // 20 scopes with 4 metrics each = 80 total metrics
 				scopeMetrics = append(scopeMetrics, createScopeMetrics(i))
 			}
 

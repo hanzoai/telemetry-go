@@ -10,7 +10,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.39.0"
 )
 
 func TestDefaultExperimental(t *testing.T) {

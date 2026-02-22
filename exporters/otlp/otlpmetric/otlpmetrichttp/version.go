@@ -5,5 +5,5 @@ package otlpmetrichttp // import "github.com/hanzoai/telemetry-go/exporters/otlp
 
 // Version is the current release version of the OpenTelemetry OTLP over HTTP/protobuf metrics exporter in use.
 func Version() string {
-	return "1.39.0"
+	return "1.40.0"
 }

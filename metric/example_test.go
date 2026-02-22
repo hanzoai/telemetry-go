@@ -15,7 +15,7 @@ import (
 	"github.com/hanzoai/telemetry-go"
 	"github.com/hanzoai/telemetry-go/attribute"
 	"github.com/hanzoai/telemetry-go/metric"
-	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.39.0"
 )
 
 var meter = otel.Meter("my-service-meter")

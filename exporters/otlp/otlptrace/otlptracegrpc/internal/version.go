@@ -5,4 +5,4 @@ package internal // import "github.com/hanzoai/telemetry-go/exporters/otlp/otlpt
 
 // Version is the current release version of the OpenTelemetry OTLP gRPC trace
 // exporter in use.
-const Version = "1.39.0"
+const Version = "1.40.0"

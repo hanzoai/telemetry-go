@@ -18,7 +18,7 @@ import (
 
 	"github.com/hanzoai/telemetry-go/attribute"
 	"github.com/hanzoai/telemetry-go/codes"
-	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.39.0"
 	"github.com/hanzoai/telemetry-go/trace/internal/telemetry"
 )
 

@@ -31,7 +31,7 @@ import (
 	"github.com/hanzoai/telemetry-go/sdk/metric"
 	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata"
 	"github.com/hanzoai/telemetry-go/sdk/resource"
-	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.39.0"
 	"github.com/hanzoai/telemetry-go/trace"
 )
 
@@ -2749,11 +2749,11 @@ func TestExporterSelfInstrumentationConcurrency(t *testing.T) {
 	const numOperations = 100
 	var wg sync.WaitGroup
 
-	for i := 0; i < numGoroutines; i++ {
+	for i := range numGoroutines {
 		wg.Add(1)
 		go func(id int) {
 			defer wg.Done()
-			for j := 0; j < numOperations; j++ {
+			for j := range numOperations {
 				counter.Add(ctx, 1, otelmetric.WithAttributes(attribute.Int("goroutine", id)))
 
 				// Occasionally trigger collection

@@ -15,7 +15,7 @@ import (
 	"github.com/hanzoai/telemetry-go/internal/global"
 	"github.com/hanzoai/telemetry-go/sdk/metric/internal/observ"
 	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata"
-	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.39.0"
 )
 
 // Default periodic reader timing.

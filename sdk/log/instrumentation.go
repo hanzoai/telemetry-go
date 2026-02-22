@@ -11,8 +11,8 @@ import (
 	"github.com/hanzoai/telemetry-go/metric"
 	"github.com/hanzoai/telemetry-go/sdk"
 	"github.com/hanzoai/telemetry-go/sdk/log/internal/x"
-	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
-	"github.com/hanzoai/telemetry-go/semconv/v1.37.0/otelconv"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.39.0"
+	"github.com/hanzoai/telemetry-go/semconv/v1.39.0/otelconv"
 )
 
 // newRecordCounterIncr returns a function that increments the log record

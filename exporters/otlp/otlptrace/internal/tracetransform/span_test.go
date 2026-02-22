@@ -19,7 +19,7 @@ import (
 	"github.com/hanzoai/telemetry-go/sdk/resource"
 	tracesdk "github.com/hanzoai/telemetry-go/sdk/trace"
 	"github.com/hanzoai/telemetry-go/sdk/trace/tracetest"
-	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.39.0"
 	"github.com/hanzoai/telemetry-go/trace"
 )
 

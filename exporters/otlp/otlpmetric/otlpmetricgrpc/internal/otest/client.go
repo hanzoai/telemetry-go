@@ -18,7 +18,7 @@ import (
 	"google.golang.org/protobuf/proto"
 
 	"github.com/hanzoai/telemetry-go/exporters/otlp/otlpmetric/otlpmetricgrpc/internal"
-	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.39.0"
 	collpb "go.opentelemetry.io/proto/otlp/collector/metrics/v1"
 	cpb "go.opentelemetry.io/proto/otlp/common/v1"
 	mpb "go.opentelemetry.io/proto/otlp/metrics/v1"

@@ -6,4 +6,4 @@ package internal // import "github.com/hanzoai/telemetry-go/exporters/prometheus
 
 // Version is the current release version of the OpenTelemetry prometheus
 // exporter in use.
-const Version = "0.61.0"
+const Version = "0.62.0"

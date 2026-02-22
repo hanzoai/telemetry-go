@@ -39,7 +39,7 @@ import (
 	"github.com/hanzoai/telemetry-go/sdk/metric/metricdata/metricdatatest"
 	sdktrace "github.com/hanzoai/telemetry-go/sdk/trace"
 	"github.com/hanzoai/telemetry-go/sdk/trace/tracetest"
-	"github.com/hanzoai/telemetry-go/semconv/v1.37.0/otelconv"
+	"github.com/hanzoai/telemetry-go/semconv/v1.39.0/otelconv"
 )
 
 func TestMain(m *testing.M) {
@@ -519,8 +519,8 @@ func TestClientInstrumentation(t *testing.T) {
 						{Attributes: attribute.NewSet(append(
 							attrs,
 							otelconv.SDKExporterOperationDuration{}.AttrErrorType("*errors.joinError"),
-							otelconv.SDKExporterOperationDuration{}.AttrRPCGRPCStatusCode(
-								otelconv.RPCGRPCStatusCodeOk,
+							otelconv.SDKExporterOperationDuration{}.AttrRPCResponseStatusCode(
+								codes.OK.String(),
 							),
 						)...)},
 					},

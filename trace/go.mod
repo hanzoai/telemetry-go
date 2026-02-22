@@ -6,8 +6,8 @@ replace github.com/hanzoai/telemetry-go => ../
 
 require (
 	github.com/google/go-cmp v0.7.0
-	github.com/hanzoai/telemetry-go v1.39.0
 	github.com/stretchr/testify v1.11.1
+	github.com/hanzoai/telemetry-go v1.40.0
 )
 
 require (

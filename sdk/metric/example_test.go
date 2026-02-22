@@ -15,7 +15,7 @@ import (
 	"github.com/hanzoai/telemetry-go/sdk/metric"
 	"github.com/hanzoai/telemetry-go/sdk/metric/exemplar"
 	"github.com/hanzoai/telemetry-go/sdk/resource"
-	semconv "github.com/hanzoai/telemetry-go/semconv/v1.37.0"
+	semconv "github.com/hanzoai/telemetry-go/semconv/v1.39.0"
 )
 
 // To enable metrics in your application using the SDK,
