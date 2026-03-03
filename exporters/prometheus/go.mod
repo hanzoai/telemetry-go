@@ -1,6 +1,6 @@
 module github.com/hanzoai/telemetry-go/exporters/prometheus
 
-go 1.24.0
+go 1.26
 
 // v0.59.0 produces incorrect metric names when bracketed units are used.
 // https://github.com/open-telemetry/opentelemetry-go/issues/7039

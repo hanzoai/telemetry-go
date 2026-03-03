@@ -1,6 +1,6 @@
 module github.com/hanzoai/telemetry-go/sdk
 
-go 1.24.0
+go 1.26
 
 replace github.com/hanzoai/telemetry-go => ../
 
